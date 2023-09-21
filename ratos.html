@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    padding-left: 25%;;
+    width: 50%;
+}
+.imgrato{
+    position: relative;
+    padding-top: 5px;
+    box-sizing: content-box;
+    border: solid 2px black;
+}
+figure{
+    box-shadow: 2px 2px 8px black;
+}
+figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+figcaption:hover{
+    opacity: 1;
+}
+    </style>
+    <title>Ratos</title>
+</head>
+<body>
+    <h1>Esta é a pagina dos ratos.</h1>
+    <hr>
+    <figure>
+        <div class="imgrato">
+            <img id="imgscout" src="./_scout.png" alt="Imagem do SCOUT">
+            <figcaption><h2>SCOUT</h2><p>Este é foda! O melhor dos ratos.</p></figcaption>
+        </div>
+        <div class="imgrato">
+            <img id="imgengi" src="./_engi.png" alt="Imagem do ENGI">
+            <figcaption><h2>ENGI</h2><p>Esse aqui é bagulho de nerd.</p></figcaption>
+        </div>
+        <div class="imgrato">
+            <img id="imgfat" src="./_fat.png" alt="Imagem do FAT">
+            <figcaption><h2>FAT</h2><p>Bagulho de pussy, fat pussy.</p></figcaption>
+        </div>
+        <div class="imgrato" >
+            <img id="imgarcher" src="./_archer.png" alt="Imagem do ARCHER">
+            <figcaption><h2>ARCHER</h2><p>Mais pussy ainda, atira de longe piupiu...</p></figcaption>
+        </div>
+    </figure>
+    <hr>
+    <button onclick=redirect()>Voltar!</button>
+    <script>
+        function redirect(){
+            window.location.href = "./index.html";
+        }
+    </script>
+</body>
+</html>
